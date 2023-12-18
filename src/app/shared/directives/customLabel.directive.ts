@@ -46,7 +46,7 @@ export class CustomLabelDirective implements OnInit {
     const errors = Object.keys(this._errors);
 
     if( errors.includes('required') )  {
-      this.htmlElement.nativeElement.innerHTML = 'Este campo es requerido';
+      this.htmlElement.nativeElement.innerHTML = 'Este campo es requerido.';
       return;
     }
 
@@ -59,7 +59,7 @@ export class CustomLabelDirective implements OnInit {
     }
 
     if( errors.includes('email') )  {
-      this.htmlElement.nativeElement.innerHTML = 'No tiene formato de email';
+      this.htmlElement.nativeElement.innerHTML = 'No tiene formato de correo.';
       return;
     }
 
